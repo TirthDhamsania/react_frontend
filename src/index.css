@@ -1,13 +1,221 @@
+/*For First page */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: gray;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#create_button {
+  margin-left: 40%;
+  margin-top: 3%;
+  font-size: 20px;
+  height: 50px;
+  width: 120px;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#view_button {
+  background-color: #4caf50;
+  font-size: 20px;
+  height: 50px;
+  width: 120px;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+.section {
+  background-color: grey;
+}
+
+/*On click on Create button....Form will be opened*/
+
+#formfield {
+  font-style: normal;
+  font-weight: 500;
+  margin: auto;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: white;
+  font-size: 30px;
+}
+input[type="text"],
+textarea {
+  font-size: 20px;
+  width: 30%;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 7px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="text"]:hover {
+  background-color: #edf5fa;
+}
+
+input[type="submit"] {
+  font-size: 20px;
+  text-align: center;
+  width: 120px;
+  height: 50px;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/*Click on View button table will be opened */
+
+#lastpage {
+  margin-top: 2%;
+  margin-left: 5%;
+  color: white;
+  font-size: 19px;
+}
+
+/*For search and sorting Option*/
+#search_and_sort {
+  display: flex;
+  font-style: italic;
+}
+
+#search {
+  border-collapse: collapse;
+  background-color: #d1e8d1;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 50%;
+  font-size: 25px;
+  padding: 5px 0px 1px 15px;
+  margin-right: 115px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+#last_lname_button {
+  margin-left: 15px;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  width: 120px;
+  height: 50px;
+  background-color: #45a049;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#last_lname_button:hover {
+  background-color: #d1e8d1;
+  color: #757575;
+}
+#last_dob_button {
+  margin-left: 15px;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  width: 120px;
+  height: 50px;
+  background-color: #45a049;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#last_dob_button:hover {
+  background-color: #d1e8d1;
+  color: #757575;
+}
+
+/*For Table*/
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  
+  align-items: center;
+  border-collapse: collapse;
+  background-color: #d1e8d1;
+  border-spacing: 0;
+  width: 1450px;
+  max-width: 1450px;
+  border-radius: 0.5rem;
+  font-size: 20px;
+  color: #45a049;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#update {
+  padding: 0.5rem;
+  font-size: 15px;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#update:hover {
+  background-color: #45a049;
+}
+
+#delete {
+  margin-left: 10px;
+  padding: 0.5rem;
+  font-size: 15px;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
